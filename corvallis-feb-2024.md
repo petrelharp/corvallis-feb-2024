@@ -27,7 +27,7 @@ and continue to make important contributions to their communities, to the UO, to
 ## Motivating problems
 
 :::: {.columns}
-:::::::: {.column width=80%}
+:::::::: {.column width=60%}
 
 1. How much natural selection is needed to explain the correlations in genetic diversity
     along the genomes of the great apes?
@@ -36,14 +36,16 @@ and continue to make important contributions to their communities, to the UO, to
     using spatial genomic data?
 
 :::: 
-:::::::: {.column width=20%}
+:::::::: {.column width=40%}
 
-![](figs/modeling_empty.png)
+![](figs/map_w_genomes.png){width=100%}
 
 :::: 
 ::::::::
 
-![](figs/murillo/greatapes_pi.png)
+::: {.centered}
+![](figs/murillo/greatapes_pi.png){width=60%}
+::: 
 
 
 # Inference, with genomes
@@ -314,6 +316,7 @@ In a well-mixed population of size $N$,
 :::
 ::::::
 
+<!--
 ## You and your great${}^{k-2}$-grand parents
 
 The number of $k^\text{th}$ *genetic* ancestors
@@ -348,6 +351,7 @@ from [gcbias.org](https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-
 from [gcbias.org](https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/)
 :::
 
+-->
 
 
 <!-- Tree sequences -->
@@ -667,9 +671,9 @@ $$\begin{equation}
 Dealing directly with genealogies
 removes the layer of noise due to mutation:
 $$\begin{equation}
-    \frac{1}{\mu^2} \var\left[\text{Site}(f,w)\right]
+    \frac{1}{\mu^2} \text{var}\left[\text{Site}(f,w)\right]
     =
-    \var\left[\text{Branch}(f,w)\right]
+    \text{var}\left[\text{Branch}(f,w)\right]
     +
     \frac{1}{n}
     \mathbb{E}\left[\text{Branch}(f^2,w)\right]
@@ -982,9 +986,17 @@ $$ \vphantom{ d_{xy} = \pi_\text{anc} \nearrow + \mu T_\text{MRCA} \searrow } $$
 
 # Maps of population density
 
-::: {.caption .floatright}
-![](figs/mapNN/chris.jpeg){width=80%}
+software: `mapNN`
 
+
+::: {.caption .floatright}
+![](figs/andy_22.jpg){width=20%}
+![](figs/mapNN/chris.jpeg){width=30%}
+
+
+with
+[Andy Kern](https://kr-colab.github.io)
+&
 [Chris C R Smith](https://scholar.google.com/citations?user=ZHHGVn8AAAAJ&hl=en)
 :::
 

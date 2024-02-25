@@ -117,18 +117,21 @@ href="https://petrelharp.github.io/corvallis-feb-2024/corvallis-feb-2024.slides.
 <section id="motivating-problems" class="slide level2">
 <h2>Motivating problems</h2>
 <div class="columns">
-<div class="column" style="width:80%;">
+<div class="column" style="width:60%;">
 <ol type="1">
 <li><p>How much natural selection is needed to explain the correlations
 in genetic diversity along the genomes of the great apes?</p></li>
 <li><p>How can we predict the landscape of population density using
 spatial genomic data?</p></li>
 </ol>
-</div><div class="column" style="width:20%;">
-<p><img data-src="figs/modeling_empty.png" /></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="figs/map_w_genomes.png" style="width:100.0%" /></p>
 </div>
 </div>
-<p><img data-src="figs/murillo/greatapes_pi.png" /></p>
+<div class="centered">
+<p><img data-src="figs/murillo/greatapes_pi.png"
+style="width:60.0%" /></p>
+</div>
 </section></section>
 <section>
 <section id="inference-with-genomes" class="title-slide slide level1">
@@ -386,42 +389,42 @@ class="math inline">\(\mu\)</span>) locations.</p></li>
 </ul>
 </div>
 </div>
-</section>
-<section id="you-and-your-greatk-2-grand-parents" class="slide level2">
-<h2>You and your great<span
-class="math inline">\({}^{k-2}\)</span>-grand parents</h2>
-<p>The number of <span class="math inline">\(k^\text{th}\)</span>
-<em>genetic</em> ancestors grows <em>linearly</em> with <span
-class="math inline">\(k\)</span>.</p>
-<div class="centered">
-<p><img
-data-src="figs/gcbias/num_genetics_vs_genealogical_ancs.png" /></p>
-</div>
-<div class="caption">
-<p>from <a
-href="https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/">gcbias.org</a></p>
-</div>
-</section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<div class="centered">
-<p><img data-src="figs/gcbias/parents_grandparents.png"
-style="width:60.0%" /></p>
-</div>
-<div class="caption">
-<p>from <a
-href="https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/">gcbias.org</a></p>
-</div>
-</section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-<div class="centered">
-<p><img data-src="figs/gcbias/male_line.png" style="width:60.0%" /></p>
-</div>
-<div class="caption">
-<p>from <a
-href="https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/">gcbias.org</a></p>
-</div>
+<!--
+## You and your great${}^{k-2}$-grand parents
+
+The number of $k^\text{th}$ *genetic* ancestors
+grows *linearly* with $k$.
+
+::: {.centered}
+![](figs/gcbias/num_genetics_vs_genealogical_ancs.png)
+:::
+
+::: {.caption}
+from [gcbias.org](https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/)
+:::
+
+## 
+
+::: {.centered}
+![](figs/gcbias/parents_grandparents.png){width=60%}
+:::
+
+::: {.caption}
+from [gcbias.org](https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/)
+:::
+
+
+## 
+
+::: {.centered}
+![](figs/gcbias/male_line.png){width=60%}
+:::
+
+::: {.caption}
+from [gcbias.org](https://gcbias.org/2013/11/11/how-does-your-number-of-genetic-ancestors-grow-back-over-time/)
+:::
+
+-->
 <!-- Tree sequences -->
 </section></section>
 <section>
@@ -769,7 +772,7 @@ alt="branch stats" />
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <p>Given</p>
 <ol type="1">
@@ -796,7 +799,7 @@ class="math inline">\(\text{Site}(f,w)\)</span> under Poisson(1)
 mutation, given the trees.</p>
 </div>
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <p>With genealogies <em>fixed</em>, and averaging only over
 <em>mutations</em> with rate <span class="math inline">\(\mu\)</span>,
@@ -807,9 +810,9 @@ w) \vert T \right] .
 <div class="fragment">
 <p>Dealing directly with genealogies removes the layer of noise due to
 mutation: <span class="math display">\[\begin{equation}
-    \frac{1}{\mu^2} \var\left[\text{Site}(f,w)\right]
+    \frac{1}{\mu^2} \text{var}\left[\text{Site}(f,w)\right]
     =
-    \var\left[\text{Branch}(f,w)\right]
+    \text{var}\left[\text{Branch}(f,w)\right]
     +
     \frac{1}{n}
     \mathbb{E}\left[\text{Branch}(f^2,w)\right]
@@ -823,7 +826,7 @@ genotype data.</p>
 </div>
 </div>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -1043,7 +1046,7 @@ href="https://tskit.dev/pyslim/docs/latest/vignette_parallel_phylo.html">tskit</
 style="width:70.0%" /></p>
 </div>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <p><img
 data-src="figs/murillo/scatter-examples-pidxy_win-size_1000000_merged-mask_True_state_all_curr_all_prop-acc_0.4.png" /></p>
@@ -1161,9 +1164,11 @@ class="invisible" style="height:80.0%" /></p>
 <section id="maps-of-population-density"
 class="title-slide slide level1">
 <h1>Maps of population density</h1>
+<p>software: <code>mapNN</code></p>
 <div class="caption floatright">
-<p><img data-src="figs/mapNN/chris.jpeg" style="width:80.0%" /></p>
-<p><a
+<p><img data-src="figs/andy_22.jpg" style="width:20.0%" /> <img
+data-src="figs/mapNN/chris.jpeg" style="width:30.0%" /></p>
+<p>with <a href="https://kr-colab.github.io">Andy Kern</a> &amp; <a
 href="https://scholar.google.com/citations?user=ZHHGVn8AAAAJ&amp;hl=en">Chris
 C R Smith</a></p>
 </div>
@@ -1333,7 +1338,7 @@ style="width:70.0%" /></p>
 </div>
 </div>
 </section>
-<section id="section-15" class="slide level2"
+<section id="section-13" class="slide level2"
 data-background-image="figs/guillemots_thanks.png"
 data-background-position="center" data-background-size="50%">
 <h2 data-background-image="figs/guillemots_thanks.png"
