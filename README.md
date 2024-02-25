@@ -1,4 +1,4 @@
-Here are [slides from a talk](https://petrelharp.github.io/umich-feb-2022/umich-feb-2022.slides.html)
-at the University of Michigan's
+Here are [slides from a talk](https://petrelharp.github.io/corvallis-feb-2024/corvallis-feb-2024.html)
+at the Oregon State University's
 Department of Statistics seminar series,
-September 16th, 2022.
+February 26th, 2024.
