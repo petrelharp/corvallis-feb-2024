@@ -1015,9 +1015,10 @@ and dispersal distance ($\sigma$):
 ## Training
 
 - randomly generated landscapes of $K$ and $\sigma$,
-- passed to spatial SLiMulations
-- and used as the target
-- data: $10^8$bp genomes 
+    * passed to spatial SLiMulations
+    * and used as the target
+
+- data: $\sim 100$ sampled $10^8$bp genomes 
 - 450 random sample pairs
 
 ## Results
@@ -1044,19 +1045,6 @@ and dispersal distance ($\sigma$):
 
 
 # Wrap-up
-
-## Other applications
-
-- history of *Nebria* beetles (Gilia Patterson, Sean Schoville, Yi-Ming Weng)
-- inference of mean dispersal distance (Chris Smith; disperseNN)
-- and of maps of effective density and dispersal distance (Chris Smith; mapNN)
-- inference of recombination rate maps (Jeff Adrion; ReLERNN)
-
-. . .
-
-- inference of maps of population density (Gilia Patterson)
-- and individual movement
-- identification of regions under selection
 
 ## Software development goals
 

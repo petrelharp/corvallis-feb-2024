@@ -1,8 +1,7 @@
 SHELL := /bin/bash
 .PHONY: figs modeling_figs
 
-figs: modeling_figs
-
+figs: modeling_figs mapNN/feems_1.png mapNN/feems_1a.png
 
 modeling_figs: modeling_empty.png \
 			   modeling_reality.png \
