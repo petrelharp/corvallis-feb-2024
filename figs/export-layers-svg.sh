@@ -27,4 +27,4 @@ done
 
 inkscape --export-type=pdf --export-filename=$OUTFILE $TMPFILE
 
-# [ -f $TMPFILE ] && rm $TMPFILE
+[ -f $TMPFILE ] && rm $TMPFILE

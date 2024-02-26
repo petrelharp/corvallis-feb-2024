@@ -199,7 +199,7 @@ an individual-based, scriptable forwards simulator
 - <s>separate sexes</s>*
 - <s>selfing</s>
 - polyploidy*
-- species interactions **(coming soon!)**
+- <s>species interactions</s>
 
 **Geography:**
 
